@@ -1,0 +1,239 @@
+.login{
+    /* background-image: url(..\images\amazinghouse.jpg);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size:100% 100%;
+    background-attachment: fixed; */
+    background-color: antiquewhite;
+    position:fixed;
+    width:100%;
+    height:100%;
+}
+.box{
+    background-color: pink;
+    text-align: center;
+    font-weight: 700;
+    padding: 80px;
+    border-radius: 50px;
+    position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+.title{
+    color: rgb(206, 20, 113);
+    font-size:50px;
+}
+.avatar_li{
+    list-style-type: none;
+    display: inline;
+    padding: 20px;
+    text-align: center;
+}
+
+.now{
+    border: 4px solid rgb(206, 20, 113);
+}
+.a{
+    font-size:0;
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+    margin: 10px auto;
+}
+.chat{
+    padding: 0;
+    margin: 0;
+    display: none;
+    float: left;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    min-width: 1000px;
+    background-position: center 0; 
+}
+.list{
+    display: block;
+    float: left;
+    height: 100%;
+    width: 20%;
+    background-color: pink;
+    padding: 0%;
+}
+.user{
+    height: 75px;
+    text-align: left;
+    box-shadow: 0px 2px 2px rgb(206, 20, 113);
+    /* 居中 */
+    line-height: 60px;
+}
+
+/* 用户头像 */
+.b{
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    margin-left: 25px;
+}
+.name{
+    margin-left: 20px;
+    font-size: 25px;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+.user_list{
+    height: 50px;
+    text-align: center;
+    box-shadow: 0px 2px 2px rgb(206, 20, 113);
+    /* 居中 */
+    line-height: 60px;
+}
+.chat_box{
+    width: 80%;
+    height: 100%;
+    float: left;
+}
+
+/* 聊天框头 */
+.e{
+    color: rgb(241, 7, 11);
+    font-weight: 700;
+    line-height: 50px;
+    width: 100%;
+    height: 7.5%;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 0px 2px 2px rgb(206, 20, 113);
+}
+
+.content{
+    display: block;
+    width: 100%;
+    height: 60%;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+/* 系统消息 */
+.system{
+    text-align: center;
+    color: rgb(206, 20, 113);
+    font-size: 10;
+}
+.list_ul{
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+}
+.list_li{
+    margin: 4px;
+    padding: 4px;
+    list-style-type:none;
+    line-height: 52px;
+}
+
+.send_box{
+    width: 80%;
+    position:fixed; bottom:0;
+    height: 30%;
+}
+.send_fun{
+    height: 30px;
+    border: 2px solid rgb(206, 20, 113);
+    width: 100%;
+}
+.send{
+    width: 80%;
+    height: 30px;
+    position:fixed; bottom:0;
+}
+/* 发送按钮 */
+.send_button{
+    float: right;
+    width: 60px;
+    height: 30px;
+    margin: 2px;
+    font-weight: 700;
+    text-align: center;
+    border-color: rgb(206, 20, 113);
+    background-color: pink;
+    color: rgb(235, 55, 55);
+}
+/* 发送内容 */
+.msg{
+    outline: none;
+    text-align: left;
+    border-style: none;
+    width: 100%;
+    height: 120px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.system{
+    width: 100%;
+}
+.word{
+    display: inline;
+    width: 100%;
+}
+/* 自己说的话 */
+.my{
+    margin: 2px;
+    width: 100%;
+    float: right;
+    height: 60px;
+    text-align: right;
+}
+.myavatar{
+    width: 60px;
+    height: 60px;
+    float: right;
+}
+.myname{
+    font-weight: 700;
+    float: right;
+}
+.myword{
+    font-weight: 500;
+    width: 60%;
+    width: fit-content;
+    padding:5px 10px;
+    border: 2px solid rgb(206, 20, 113);
+    border-radius: 5px;
+    display:block;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+/* 别人说的话 */
+.other{
+    margin: 2px;
+    width: 100%;
+    height: auto;
+    float: left;
+    text-align: left;
+    height: 60px;
+}
+.otheravatar{
+    width: 60px;
+    height: 60px;
+    float: left;
+}
+.othername{
+    font-weight: 700;
+    float: left;
+}
+.otherword{
+    font-weight: 500;
+    width: 60%;
+    width: fit-content;
+    padding:5px 10px;
+    border: 2px solid rgb(206, 20, 113);
+    border-radius: 5px;
+    display:block;
+    word-break: break-all;
+    word-wrap: break-word;
+}

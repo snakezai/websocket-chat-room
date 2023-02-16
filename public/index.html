@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/index.css" />
+</head>
+<body>
+  <!-- 登录页面 -->
+  <div class="login">
+    <!-- 登录框 -->
+    <div class="box">
+      <div class="title">猛男妙妙屋</div>
+      <span>姓名</span>
+      <input type="text" placeholder="输入名字" id ="username" />
+      <br>
+      <div style="margin-top: 20px;margin-bottom: 10px;color: rgb(241, 7, 11);">选择你的英雄</div>
+      <ur id ="login_avatar">
+        <li class="avatar_li"><img src="images\巫妖王.jpg" alt="" class="a now" />
+        <img src="images\香蕉君.jpg" alt="" class="a" />
+        <img src="images\van.jpg" alt="" class="a" /></li>
+      </ur>
+      <br>
+      <button id="login_button">登录</button>
+    </div>
+  </div>
+
+  <!-- 聊天页面 -->
+  <div class="chat">
+    <!--用户列表 -->
+    <div class="list">
+      <div class="user">
+        <img src="images/一眼.jpg" alt="" class="b" />
+        <span class="name">顶真</span>
+      </div>
+      <div class="user_list">用户列表</div>
+      <div>
+        <ul class="list_ul">
+        </ul>
+      </div>
+    </div>
+    <!-- 聊天框 -->
+    <div class="chat_box">
+      <!-- 聊天框头 -->
+      <div class="e"> 猛♂男e屋(<span id="userCount">1</span>)</div>
+
+      <!-- 聊天内容 -->
+      <div class="content">
+        <div id="content"></div>
+      </div>
+      
+      <!-- 输入框 -->
+      <div class="send_box">
+        <!-- 发送及其他功能 -->
+        <div class="send_fun">功能栏</div>
+        <div class="send">
+          <button class="send_button">发送</button>
+        </div>
+
+        <!-- 发送内容 -->
+        <div>
+          <textarea class="msg" contenteditable=""></textarea>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+  <script src="js/index.js"></script>
+  
+</body>
+</html>
